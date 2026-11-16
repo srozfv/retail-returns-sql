@@ -1,0 +1,11 @@
+name: PostgreSQL checks
+on: [push, pull_request]
+jobs:
+  sql:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up -d --wait
+      - run: docker compose exec -T db psql -X -U analyst -d portfolio -f sql/run.sql
+      - run: docker compose down
+        if: always()

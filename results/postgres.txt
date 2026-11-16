@@ -1,0 +1,51 @@
+BEGIN
+CREATE SCHEMA
+SET
+DROP VIEW
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+COPY 12
+COPY 9000
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+SAVEPOINT
+INSERT 0 4
+DO
+ROLLBACK
+DO
+COMMIT
+ cohort_month | delivered | returned | return_pct | returned_rub 
+--------------+-----------+----------+------------+--------------
+ 2025-01-01   |       732 |       53 |       7.24 |       158868
+ 2025-02-01   |       712 |       64 |       8.99 |       201216
+ 2025-03-01   |       753 |       78 |      10.36 |       244615
+ 2025-04-01   |       776 |       81 |      10.44 |       238871
+ 2025-05-01   |       763 |       82 |      10.75 |       233367
+ 2025-06-01   |       707 |       76 |      10.75 |       234526
+ 2025-07-01   |       756 |       80 |      10.58 |       212451
+ 2025-08-01   |       774 |       69 |       8.91 |       204824
+ 2025-09-01   |       747 |       81 |      10.84 |       238516
+ 2025-10-01   |       795 |       67 |       8.43 |       216183
+ 2025-11-01   |       727 |       71 |       9.77 |       212685
+ 2025-12-01   |        19 |        2 |      10.53 |         8067
+(12 rows)
+
+  category   |   channel   | delivered | returned | returned_rub | return_pct | exposure_rank 
+-------------+-------------+-----------+----------+--------------+------------+---------------
+ Apparel     | Marketplace |      1619 |      300 |       774704 |      18.53 |             1
+ Electronics | Marketplace |      1707 |      135 |       599027 |       7.91 |             2
+ Apparel     | Direct      |      1085 |      136 |       348324 |      12.53 |             3
+ Electronics | Direct      |      1111 |       77 |       347884 |       6.93 |             4
+ Home        | Marketplace |      1645 |       96 |       204860 |       5.84 |             5
+ Home        | Direct      |      1094 |       60 |       129390 |       5.48 |             6
+(6 rows)
+
+    reason    | returned | returned_rub 
+--------------+----------+--------------
+ Fit          |      182 |       455734
+ Changed mind |       72 |       199079
+ Damaged      |       46 |       119891
+(3 rows)
+
