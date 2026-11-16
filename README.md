@@ -1,5 +1,7 @@
 # Возвраты интернет-магазина за 30 дней
 
+[![GitHub Actions](https://github.com/srozfv/retail-returns-sql/actions/workflows/check.yml/badge.svg)](https://github.com/srozfv/retail-returns-sql/actions/workflows/check.yml)
+
 Портфолио · PostgreSQL · синтетические данные
 
 Руководителю операций нужно выбрать связку «категория × канал» для детального разбора возвратов. Доля показывает частоту, а стоимость возвращённых позиций помогает оценить масштаб. [NRF рассматривает возвраты как отдельную операционную задачу розницы](https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025). Данные этого исследования в проекте не используются.
@@ -49,3 +51,7 @@ docker compose down
 - `sql/tests.sql` автоматически проверяет границы окна на четырёх контрольных строках, затем удаляет эти строки откатом к точке сохранения. После этого проверяются сверка когорт и знаменатели сегментов.
 
 Синтаксис импорта — [документация psql](https://www.postgresql.org/docs/16/app-psql.html).
+
+## Другой проект портфолио
+
+[SLA первого ответа техподдержки в Power BI](https://github.com/srozfv/support-sla-powerbi)
